@@ -1,0 +1,27 @@
+{
+  "name": "autodocumentary-ai",
+  "version": "0.1.0",
+  "description": "Fully autonomous AI-powered documentary video generation system",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "yarn workspaces run dev",
+    "build": "yarn workspaces run build",
+    "start": "yarn workspaces run start",
+    "lint": "yarn workspaces run lint",
+    "test": "yarn workspaces run test",
+    "type-check": "yarn workspaces run type-check",
+    "db:migrate": "cd apps/api && yarn db:migrate",
+    "db:seed": "cd apps/api && yarn db:seed"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "packageManager": "yarn@4.0.0"
+}
