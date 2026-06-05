@@ -1,0 +1,88 @@
+Angelo/
+├── README.md
+├── package.json
+├── tsconfig.json
+├── turbo.json
+├── .gitignore
+├── .env.example
+├── prettier.config.js
+├── .eslintrc.json
+│
+├── apps/
+│   ├── web/
+│   │   ├── package.json
+│   │   ├── tsconfig.json
+│   │   ├── next.config.js
+│   │   ├── tailwind.config.ts
+│   │   ├── postcss.config.js
+│   │   ├── .gitignore
+│   │   └── src/
+│   │       └── app/
+│   │           ├── layout.tsx
+│   │           ├── globals.css
+│   │           └── page.tsx
+│   │
+│   └── api/
+│       ├── package.json
+│       ├── tsconfig.json
+│       ├── .env.example
+│       ├── nest-cli.json
+│       └── src/
+│           ├── main.ts
+│           ├── app.module.ts
+│           ├── app.controller.ts
+│           ├── app.service.ts
+│           └── modules/
+│               ├── producer/
+│               ├── research/
+│               ├── script/
+│               ├── storyboard/
+│               ├── image/
+│               ├── video/
+│               ├── voiceover/
+│               ├── editor/
+│               ├── thumbnail/
+│               ├── seo/
+│               └── youtube/
+│
+├── packages/
+│   ├── agents/
+│   │   ├── package.json
+│   │   ├── tsconfig.json
+│   │   └── src/
+│   │       ├── base.agent.ts
+│   │       └── index.ts
+│   ├── types/
+│   │   ├── package.json
+│   │   ├── tsconfig.json
+│   │   └── src/
+│   │       └── index.ts
+│   ├── shared/
+│   │   ├── package.json
+│   │   ├── tsconfig.json
+│   │   └── src/
+│   │       ├── constants.ts
+│   │       └── index.ts
+│   └── utils/
+│       ├── package.json
+│       ├── tsconfig.json
+│       └── src/
+│           └── index.ts
+│
+├── infrastructure/
+│   ├── docker/
+│   │   ├── Dockerfile.api
+│   │   ├── Dockerfile.web
+│   │   ├── Dockerfile.redis
+│   │   └── docker-compose.yml
+│   └── nginx/
+│       └── nginx.conf
+│
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+│
+└── docs/
+    ├── ARCHITECTURE.md
+    ├── SETUP.md
+    └── API.md
